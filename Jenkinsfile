@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     sh 'if [ -d integration-testing-java ]; then rm -rf integration-testing-java; fi'
-                    sh 'git clone https://github.com/robsonagapito/integration-testing-java.git'
+                    sh 'git clone https://github.com/pardinn/integration-testing-java.git'
                     sh 'cd integration-testing-java && mvn verify'
                 }
             }
